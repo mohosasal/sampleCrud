@@ -1,0 +1,92 @@
+### create
+POST http://localhost:8080/api/wallets
+Content-Type: application/json
+
+{
+  "name": "ali"
+}
+
+### create
+POST http://localhost:8080/api/wallets
+Content-Type: application/json
+
+{
+  "name": "reza"
+}
+
+### create
+POST http://localhost:8080/api/wallets
+Content-Type: application/json
+
+{
+  "name": "jigar"
+}
+
+#### find by id
+#GET http://localhost:8080/api/wallets/3
+#
+#### show all
+#GET http://localhost:8080/api/wallets
+#
+#### show all
+#GET http://localhost:8080/api/wallets
+#
+#### update
+#PUT http://localhost:8080/api/wallets/4
+#Content-Type: application/json
+#
+#{
+#  "name": "atefe"
+#}
+#
+#### delete
+#DELETE http://localhost:8080/api/wallets/2
+#
+#### delete all
+#DELETE http://localhost:8080/api/wallets
+
+
+### transaction increase
+
+POST http://localhost:8080/api/transaction
+Content-Type: application/json
+
+{
+  "wallet":"1",
+  "transactionType":"INCREASE",
+  "amount" : "10"
+}
+
+### transaction increase
+
+POST http://localhost:8080/api/transaction
+Content-Type: application/json
+
+{
+  "wallet":"1",
+  "transactionType":"DECREASE",
+  "amount" : "10"
+}
+
+### transaction increase
+
+POST http://localhost:8080/api/transaction
+Content-Type: application/json
+
+{
+  "wallet":"1",
+  "transactionType":"DECREASE",
+  "amount" : "10"
+}
+
+### transaction increase
+
+POST http://localhost:8080/api/transaction
+Content-Type: application/json
+
+{
+  "wallet":"",
+  "transactionType":"DECREASE",
+  "amount" : "10"
+}
+
